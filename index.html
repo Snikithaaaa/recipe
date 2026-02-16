@@ -12,6 +12,15 @@
   <header>
     <h1>🍳 RecipeJS</h1>
     <p>Your Functional Cooking Companion</p>
+
+    <div class="search-wrapper">
+      <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Search recipes..."
+      />
+      <button id="clear-search" type="button">✖</button>
+    </div>
   </header>
 
   <main>
@@ -24,6 +33,7 @@
         <button type="button" data-filter="medium">Medium</button>
         <button type="button" data-filter="hard">Hard</button>
         <button type="button" data-filter="quick">Under 30 min</button>
+        <button type="button" data-filter="favorites">Favorites</button>
       </div>
 
       <div class="sort-buttons">
@@ -33,9 +43,9 @@
 
     </section>
 
-    <div id="recipe-container">
-      <!-- JS renders here -->
-    </div>
+    <p id="recipe-counter"></p>
+
+    <div id="recipe-container"></div>
 
   </main>
 
